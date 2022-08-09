@@ -1,0 +1,27 @@
+{
+  "name": "vue3-learn",
+  "version": "1.0.0",
+  "description": "vue3源码学习",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --config webpack.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/strugglinglee/vue3-learn.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/strugglinglee/vue3-learn/issues"
+  },
+  "homepage": "https://github.com/strugglinglee/vue3-learn#readme",
+  "dependencies": {
+    "webpack": "^5.74.0"
+  },
+  "devDependencies": {
+    "webpack-cli": "^4.10.0"
+  }
+}
