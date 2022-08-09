@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/strugglinglee/vue3-learn#readme",
   "dependencies": {
+    "typescript": "^4.7.4",
     "webpack": "^5.74.0"
   },
   "devDependencies": {
