@@ -5,7 +5,7 @@ module.exports = {
     entry: './packages/vue/src/index.ts',
     output: {
         path: path.resolve(__dirname, './packages/vue/dist'),
-        filename: 'mini-vue.cjs.js',
+        filename: 'struggling.cjs.js',
     },
     resolve: {
         // options for resolving module requests
@@ -16,6 +16,8 @@ module.exports = {
         // 使用的扩展名
         alias: {
             '@strugglinglee/shared': path.resolve(__dirname, '', 'packages/shared/src'),
+            '@strugglinglee/compiler-core': path.resolve(__dirname, '', 'packages/compiler-core/src'),
+            '@strugglinglee/runtime-dom': path.resolve(__dirname, '', 'packages/runtime-dom/src'),
         }
     }
 };
