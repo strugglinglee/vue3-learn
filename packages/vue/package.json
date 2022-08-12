@@ -12,9 +12,5 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "@strugglinglee/shared": "workspace:*"
-  },
-  "workspaces": ["packages/shared"]
+  "license": "ISC"
 }
