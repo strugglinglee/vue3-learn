@@ -3,9 +3,22 @@ const path = require('path');
 module.exports = {
     mode: "production",
     entry: './packages/vue/src/index.ts',
+    experiments: {
+        outputModule: true,
+    },
     output: {
         path: path.resolve(__dirname, './packages/vue/dist'),
-        filename: 'struggling.cjs.js',
+        filename: 'strugglinglee.esm-bundler.js',
+        library: {
+            type: "module"
+        }
+    },
+    module: {
+        rules: [{
+            test: /\.tsx?$/,
+            use: 'ts-loader',
+            exclude: /node_modules/
+        }]
     },
     resolve: {
         // options for resolving module requests
@@ -18,6 +31,8 @@ module.exports = {
             '@strugglinglee/shared': path.resolve(__dirname, '', 'packages/shared/src'),
             '@strugglinglee/compiler-core': path.resolve(__dirname, '', 'packages/compiler-core/src'),
             '@strugglinglee/runtime-dom': path.resolve(__dirname, '', 'packages/runtime-dom/src'),
+            '@strugglinglee/runtime-core': path.resolve(__dirname, '', 'packages/runtime-core/src'),
+            '@strugglinglee/reactivity': path.resolve(__dirname, '', 'packages/reactivity/src'),
         }
     }
 };

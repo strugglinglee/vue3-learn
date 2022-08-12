@@ -1,5 +1,5 @@
-export { shallowReadonly } from "./reactive";
+export { shallowReadonly, reactive } from "./reactive";
   
-export { proxyRefs } from "./ref";
+export { proxyRefs, ref } from "./ref";
 
 export { effect} from "./effect";

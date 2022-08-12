@@ -1,1 +1,0 @@
-(()=>{"use strict";console.log((o=>null!==o&&"object"==typeof o))})();
