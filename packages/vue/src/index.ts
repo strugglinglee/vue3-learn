@@ -17,4 +17,6 @@ function compileToFunction(template, options = {}) {
   return render;
 }
 
+
+// 注册运行时编译器程序 compileToFunction变得全局可拿到
 registerRuntimeCompiler(compileToFunction);

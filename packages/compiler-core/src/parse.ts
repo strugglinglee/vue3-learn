@@ -12,6 +12,7 @@ export function baseParse(content: string) {
 
 function createParserContext(content) {
   console.log("创建 paserContext");
+  // 转成对象格式
   return {
     source: content,
   };
