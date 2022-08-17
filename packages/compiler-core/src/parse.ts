@@ -27,6 +27,7 @@ function parseChildren(context, ancestors) {
     const s = context.source;
 
     if (startsWith(s, "{{")) {
+      // 最基本的数据绑定形式是文本插值，它使用的是“Mustache”语法 (即双大括号)：
       // 看看如果是 {{ 开头的话，那么就是一个插值， 那么去解析他
       node = parseInterpolation(context);
     } else if (s[0] === "<") {
